@@ -1,0 +1,15 @@
+.tickers {
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: calc(10px + 2vmin);
+  overflow: auto;
+
+  .ticker {
+    background-color: black;
+    flex: 1;
+    flex-basis: 20%;
+    margin: 20px;
+  }
+}

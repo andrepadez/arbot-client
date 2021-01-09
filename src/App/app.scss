@@ -1,0 +1,25 @@
+$background-color: #282c34;
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $background-color;
+  color: white;
+
+  a,
+  a:hover,
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  pre {
+    font-size: 12px;
+    text-align: left;
+    background: black;
+    padding: 20px 50px;
+  }
+}
+
+@import './Tickers/tickers.scss';
+@import '../Components/SlideModal/slide-modal.scss';
