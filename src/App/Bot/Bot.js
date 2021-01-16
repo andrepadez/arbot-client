@@ -7,7 +7,7 @@ const Bot = ({ socket }) => {
     socket.on('ticker', ticker => setState(ticker))
   })
 
-  const { lastOpPrice, thresh, diff, soldQty } = state
+  const { lastOpPrice, thresh, diff, newPrice } = state
 
   return (
     <div className='tickers'>
@@ -16,12 +16,16 @@ const Bot = ({ socket }) => {
         <p>{lastOpPrice}</p>
       </div>
       <div className='ticker'>
-        <h4>threshold</h4>
-        <p>{thresh}</p>
+        <h4>New Price</h4>
+        <p>{newPrice}</p>
       </div>
       <div className='ticker'>
         <h4>diff</h4>
         <p>{diff}</p>
+      </div>
+      <div className='ticker'>
+        <h4>threshold</h4>
+        <p>{thresh}</p>
       </div>
     </div>
   )
