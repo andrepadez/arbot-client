@@ -20,12 +20,12 @@ const Bot = ({ socket }) => {
         <p>{newPrice}</p>
       </div>
       <div className='ticker'>
-        <h4>diff</h4>
-        <p>{diff}</p>
-      </div>
-      <div className='ticker'>
         <h4>threshold</h4>
         <p>{thresh}</p>
+      </div>
+      <div className='ticker'>
+        <h4>diff</h4>
+        <p>{diff}</p>
       </div>
     </div>
   )
