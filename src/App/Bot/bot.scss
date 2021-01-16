@@ -1,0 +1,15 @@
+.bot-info {
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: calc(10px + 2vmin);
+  overflow: auto;
+
+  .ticker {
+    background-color: black;
+    flex: 1;
+    margin: 20px;
+  }
+}

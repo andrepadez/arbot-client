@@ -11,7 +11,11 @@ function App () {
   return (
     <div className='App'>
       <Balances socket={socket} />
-      <Bot socket={socket} />
+      <div className='columns'>
+        <div></div>
+        <Bot socket={socket} />
+        <div></div>
+      </div>
     </div>
   )
 }

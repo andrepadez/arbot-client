@@ -19,7 +19,16 @@ $background-color: #282c34;
     background: black;
     padding: 20px 50px;
   }
+
+  .columns {
+    display: flex;
+
+    > * {
+      flex: 1;
+    }
+  }
 }
 
 @import './Tickers/tickers.scss';
+@import './Bot/bot.scss';
 @import '../Components/SlideModal/slide-modal.scss';

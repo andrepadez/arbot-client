@@ -10,7 +10,7 @@ const Bot = ({ socket }) => {
   const { lastOpPrice, thresh, diff, newPrice } = state
 
   return (
-    <div className='tickers'>
+    <div className='bot-info'>
       <div className='ticker'>
         <h4>Last Op Price</h4>
         <p>{lastOpPrice}</p>
