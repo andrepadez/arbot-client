@@ -29,6 +29,28 @@ $background-color: #282c34;
   }
 }
 
+@media (max-width: 1000px) {
+  .App {
+    font-size: 0.6em;
+    display: flex;
+    > * {
+      flex: 1;
+    }
+
+    .columns {
+      flex-direction: row;
+      .balances {
+        flex: 1;
+        flex-basis: 30%;
+      }
+      .bot-info {
+        flex: 1;
+        flex-basis: 65%;
+      }
+    }
+  }
+}
+
 @import './Tickers/tickers.scss';
 @import './Bot/bot.scss';
 @import '../Components/SlideModal/slide-modal.scss';

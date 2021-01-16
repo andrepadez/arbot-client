@@ -10,10 +10,10 @@ const socket = io(REACT_APP_BACKEND_URI)
 function App () {
   return (
     <div className='App'>
-      <Balances socket={socket} />
       <div className='columns'>
-        <div></div>
+        <Balances socket={socket} />
         <Bot socket={socket} />
+        <div></div>
         <div></div>
       </div>
     </div>
