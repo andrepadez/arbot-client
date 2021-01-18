@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 const RsiTrades = ({ socket }) => {
   const [rsi, setRsi] = useState(0)
 
-  useEffect(() => socket.on('rsi', setRsi), [setRsi])
+  useEffect(() => socket.on('rsi', setRsi), [socket])
 
   return (
     <div className='tickers'>
