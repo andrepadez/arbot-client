@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 const Balances = ({ socket }) => {
   const [balances, setBalances] = useState([])
 
-  useEffect(() => socket.on('balances', setBalances))
+  useEffect(() => socket.on('balances', setBalances), [socket])
 
   return (
     <div className='balances'>
